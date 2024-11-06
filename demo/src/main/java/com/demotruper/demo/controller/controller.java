@@ -36,6 +36,10 @@ public class controller {
     @PostMapping("/saveUser")
     public ResponseEntity<UserEntity> saveUser(@RequestBody UserDTO userDTO){
         return new  ResponseEntity<>(userService.saveUser(userDTO),HttpStatus.OK);
+
+
+
+
     }
     @PostMapping("/getUsersById")
     public ResponseEntity<UserEntity> getUsersById(@RequestBody UserDTO userDTO){
